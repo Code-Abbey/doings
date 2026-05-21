@@ -1,0 +1,28 @@
+# Teacher-facing documents with credentials — keep local only
+Instructions_for_Teacher.md
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables - NEVER commit real credentials
+backend/.env
+frontend/Doings/.env
+frontend/Doings/.env.local
+frontend/Doings/.env.*.local
+
+# Build output
+frontend/Doings/dist/
+frontend/Doings/.vite/
+
+# Uploaded files (user data)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
